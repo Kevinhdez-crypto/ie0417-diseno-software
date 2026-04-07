@@ -5,7 +5,9 @@
 ---
 
 ## Capturas de pantalla
-
+<img width="1115" height="668" alt="image" src="https://github.com/user-attachments/assets/360f097e-a957-4e15-a7a1-fa2260940aa9" />
+<img width="921" height="330" alt="image" src="https://github.com/user-attachments/assets/87f015c4-882a-426e-89da-0e18dd39f068" />
+<img width="921" height="394" alt="image" src="https://github.com/user-attachments/assets/387d9f9b-5d9b-4635-a625-3063be55eb00" />
 
 
 ---
