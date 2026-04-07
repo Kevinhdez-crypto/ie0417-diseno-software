@@ -1,6 +1,10 @@
 Kevin Hernandez Umana. C33773
 Parte 2. Docuementacion en Sphinx.
 
+URL de los dos repositorios utilizados:
+https://github.com/sandesh7860/docstring_rectangle_area_calculator.git
+https://github.com/andresf-sierra/Pomodoro_Timer_Calculator.git
+
 Herramienta utilizada: 
 
 Para esta práctica se utilizó Sphinx, una herramienta que permite generar documentación en formato HTML a partir de código fuente en Python, aprovechando los docstrings definidos en las funciones.
@@ -111,6 +115,10 @@ En esta sección se muestran capturas de pantalla de:
 
 Publicación de la documentación:
 
-La documentación generada fue desplegada en línea utilizando una plataforma de hosting estático, permitiendo su acceso desde cualquier navegador.
+La documentación generada fue desplegada en línea utilizando Netlify, permitiendo su acceso desde cualquier navegador.
+Los URL son los siguientes: 
+
+https://celebrated-creponne-532588.netlify.app/
+https://69d49d0ff30b188b1600099f--incomparable-bublanina-83add7.netlify.app/
 
 
