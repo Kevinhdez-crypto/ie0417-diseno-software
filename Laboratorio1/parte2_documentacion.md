@@ -104,14 +104,13 @@ Se abrió directamente el archivo index.html desde el navegador o se utilizó un
 
 Evidencia de la documentación generada:
 
-En esta sección se muestran capturas de pantalla de:
-
-    La página principal de la documentación generada
+En esta sección se muestran capturas de pantalla de las páginas generadas en Netlify:
 
     La sección donde se visualizan los módulos y funciones documentadas
-
-
-
+    <img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/89aeb09c-87c9-44f1-829a-e4c4f3de3c96" />
+    <img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/9528b261-1b9f-4dd4-9cc7-6e95d67a9a2f" />
+    <img width="921" height="372" alt="image" src="https://github.com/user-attachments/assets/e33313c8-80a3-4ecf-bb7c-435d83b92ada" />
+    <img width="921" height="452" alt="image" src="https://github.com/user-attachments/assets/52ce287e-bbce-4735-9f57-c3108a843e6a" />
 
 Publicación de la documentación:
 
@@ -119,6 +118,7 @@ La documentación generada fue desplegada en línea utilizando Netlify, permitie
 Los URL son los siguientes: 
 
 https://celebrated-creponne-532588.netlify.app/
+
 https://69d49d0ff30b188b1600099f--incomparable-bublanina-83add7.netlify.app/
 
 
