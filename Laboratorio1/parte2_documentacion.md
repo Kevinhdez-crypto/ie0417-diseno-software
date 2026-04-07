@@ -3,6 +3,7 @@ Parte 2. Docuementacion en Sphinx.
 
 URL de los dos repositorios utilizados:
 https://github.com/sandesh7860/docstring_rectangle_area_calculator.git
+
 https://github.com/andresf-sierra/Pomodoro_Timer_Calculator.git
 
 Herramienta utilizada: 
@@ -13,40 +14,39 @@ Objetivo:
 
 El objetivo fue generar documentación navegable en HTML para un proyecto en Python, asegurando que se incluyeran módulos, funciones y descripciones claras del código.
 
-Procedimiento realizado:
+Procedimiento realizado: Se partió de un repositorio que contenía un archivo en Python con funciones definidas (.py).
 
-    Se partió de un repositorio que contenía un archivo en Python con funciones definidas (.py).
+Se inicializó Sphinx dentro del proyecto utilizando:
+"sphinx-quickstart docs"
 
-    Se inicializó Sphinx dentro del proyecto utilizando:
+Se configuró el archivo conf.py para permitir que Sphinx reconociera el código del proyecto:
 
-    Comando utilizado: "sphinx-quickstart docs"
+Se agregó la ruta del proyecto al sistema:
 
-    Se configuró el archivo conf.py para permitir que Sphinx reconociera el código del proyecto:
-
-    Se agregó la ruta del proyecto al sistema:
-
-import os
+    
+import os 
 import sys
 sys.path.insert(0, os.path.abspath('../../'))
 
-    Se habilitó la extensión necesaria para documentar código automáticamente:
+Se habilitó la extensión necesaria para documentar código automáticamente:
 
-extensions = ['sphinx.ext.autodoc']
+extensions = ['sphinx.ext.autodoc']  
 
-    Se creó un archivo .rst correspondiente al módulo del proyecto, donde se indicó a Sphinx que debía documentar automáticamente el contenido del archivo Python:
+Se creó un archivo .rst correspondiente al módulo del proyecto, donde se indicó a Sphinx que debía documentar automáticamente el contenido del archivo Python:  
 
-    Comando utilizado:  .. automodule:: nombre_del_modulo
+
+Comando utilizado:  .. automodule:: nombre_del_modulo
                             :members:
- 
-    Se configuró el archivo index.rst para incluir el módulo dentro de la documentación generada mediante un toctree.
+                         
+ Se configuró el archivo index.rst para incluir el módulo dentro de la documentación generada mediante un toctree.
+ Se generó la documentación en HTML ejecutando:
 
-    Se generó la documentación en HTML ejecutando:
 
 cd docs
 make clean
 make html
 
-    Finalmente, se abrió la documentación generada en el navegador para verificar su funcionamiento y estructura.
+Finalmente, se abrió la documentación generada en el navegador para verificar su funcionamiento y estructura.
 
 
 Problemas encontrados y soluciones
@@ -104,13 +104,11 @@ Se abrió directamente el archivo index.html desde el navegador o se utilizó un
 
 Evidencia de la documentación generada:
 
-En esta sección se muestran capturas de pantalla de las páginas generadas en Netlify:
-
-    La sección donde se visualizan los módulos y funciones documentadas
-    <img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/89aeb09c-87c9-44f1-829a-e4c4f3de3c96" />
-    <img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/9528b261-1b9f-4dd4-9cc7-6e95d67a9a2f" />
-    <img width="921" height="372" alt="image" src="https://github.com/user-attachments/assets/e33313c8-80a3-4ecf-bb7c-435d83b92ada" />
-    <img width="921" height="452" alt="image" src="https://github.com/user-attachments/assets/52ce287e-bbce-4735-9f57-c3108a843e6a" />
+En esta sección se muestran capturas de pantalla de las páginas generadas en Netlify: 
+<img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/f3ade853-59c9-4794-823e-a9bbc276b886" />
+<img width="921" height="344" alt="image" src="https://github.com/user-attachments/assets/0a6361f7-84d6-4c68-b9f0-b71ca401505b" />
+<img width="921" height="372" alt="image" src="https://github.com/user-attachments/assets/c7dd3d9b-b21d-4f10-9ece-bd3c2fbd871b" />
+<img width="921" height="452" alt="image" src="https://github.com/user-attachments/assets/fdada069-e0ce-4595-9988-22ffea827ef9" />
 
 Publicación de la documentación:
 
