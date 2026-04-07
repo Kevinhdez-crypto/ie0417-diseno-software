@@ -43,3 +43,74 @@ make clean
 make html
 
     Finalmente, se abrió la documentación generada en el navegador para verificar su funcionamiento y estructura.
+
+
+Problemas encontrados y soluciones
+
+Durante el desarrollo de la práctica se presentaron diversos problemas, los cuales fueron resueltos de la siguiente manera:
+*Error: Unknown directive type "automodule"
+
+Causa:
+La extensión autodoc no estaba habilitada en el archivo conf.py.
+
+Solución:
+Se agregó la siguiente línea:
+
+extensions = ['sphinx.ext.autodoc']
+
+*Error: No module named 'nombre_del_modulo'
+
+Causa:
+Sphinx no encontraba el archivo .py dentro del proyecto.
+
+Solución:
+Se configuró correctamente la ruta en conf.py:
+
+sys.path.insert(0, os.path.abspath('../../'))
+
+*Problemas con generación de HTML
+
+Causa:
+Configuraciones previas o caché de Sphinx.
+
+Solución:
+Se utilizó:
+
+make clean
+make html
+
+*Problemas con el despliegue en Netlify
+
+Causa:
+Se intentó subir una carpeta incorrecta.
+
+Solución:
+Se subió únicamente la carpeta:
+
+docs/build/html
+
+*Problemas para visualizar la documentación:
+
+Causa:
+Dificultades al abrir el archivo HTML desde la máquina virtual.
+
+Solución:
+Se abrió directamente el archivo index.html desde el navegador o se utilizó un servidor local.
+
+
+Evidencia de la documentación generada:
+
+En esta sección se muestran capturas de pantalla de:
+
+    La página principal de la documentación generada
+
+    La sección donde se visualizan los módulos y funciones documentadas
+
+
+
+
+Publicación de la documentación:
+
+La documentación generada fue desplegada en línea utilizando una plataforma de hosting estático, permitiendo su acceso desde cualquier navegador.
+
+
