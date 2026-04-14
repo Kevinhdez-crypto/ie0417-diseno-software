@@ -82,3 +82,5 @@ Caso seleccionado: Plataforma de pedidos para un restaurante.
 ---
  
 ## c. Diagrama UML de casos de uso
+
+<img width="921" height="555" alt="image" src="https://github.com/user-attachments/assets/52291713-197a-4e65-826b-a9e65ef54dcb" />
