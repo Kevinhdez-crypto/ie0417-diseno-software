@@ -8,7 +8,7 @@
 
 ## 2_Comando ejecutado
     docker info
-## 2_salida
+## 2_salida Parcial
             Client:
             Version:    29.1.3
             Context:    default
@@ -61,7 +61,7 @@
     docker help
 
 ## 3_salida
-    Basicamnete muestra los comandos que puedes utilizar para hacer uso de docker, como crear imagenes y demas. Una muestra de lo que sale en la terminal es: 
+    Basicamente muestra los comandos que puedes utilizar para hacer uso de docker, como crear imagenes y demas. Una muestra de lo que sale en la terminal es: 
 
     run         Create and run a new container from an image
     exec        Execute a command in a running container
@@ -73,10 +73,10 @@
 
 
 ## Explicacion breve sobre lo que muestra docker info
-    Basicamente muestra tola la informacion del docker una vez que este se haya instalada, muestre mi usuario, el sistema operativo, contenedores activos, imágenes disponibles, configuraciones de almacenamiento y logging, información de la CPU de la memoria, y detalles del sistema operativo.
+    Basicamente muestra toda la informacion del docker una vez que este se haya instalado, muestre mi usuario, el sistema operativo, contenedores activos, imagenes disponibles, configuraciones de almacenamiento y logging, información de la CPU de la memoria, y detalles del sistema operativo.
 
 ## ¿Por que es importante verificar la instalacion antes de continuar?
-    Es de suma importancia debido a que ayuda a evitar errores inesperados a la hora de crear imagenes por ejmplo y demas. 
+    Es de suma importancia debido a que ayuda a evitar errores inesperados a la hora de crear imagenes por ejemplo y demas. 
 
 ## ¿Qué diferencia hay entre instalar Docker y tener Docker ejecutándose correctamente?
     Instalar Docker significa que los archivos y comandos están disponibles en el sistema, mientras que tenerlo ejecutándose correctamente implica que el daemon de Docker está activo en segundo plano y puede crear y gestionar contenedores.
