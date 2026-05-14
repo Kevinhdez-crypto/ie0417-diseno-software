@@ -12,6 +12,8 @@
     El segundo número (5000) es el puerto dentro del contenedor.
 
 ## Captura del navegador mostrando la aplicación funcionando.
+    <img width="589" height="276" alt="parte5 lab2" src="https://github.com/user-attachments/assets/31fb0f94-9be4-4762-ad92-11a5e5e7cc01" />
+
 
 
 ## ¿Por qué no basta con que la aplicación escuche en el puerto 5000 dentro del contenedor?
