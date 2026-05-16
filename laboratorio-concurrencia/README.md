@@ -14,4 +14,7 @@
 ## Compilación y ejecución
 
 ### Parte 1
-    Aqui va sucesivamente la recopilacion de los datos y las otras partes.
+    Una vez creado el codigo se procede a compilar el archivo: 
+    comando para compilar el archivo: g++ -std=c++17 -Wall -Wextra -pthread src/parte1_threads.cpp -o parte1
+
+    Comando para ejecutarlo: ./parte1
