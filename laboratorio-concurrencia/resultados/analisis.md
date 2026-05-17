@@ -36,5 +36,40 @@
     4.​ ¿Qué problema de concurrencia se está observando?
         Se observa una condición de carrera (race condition), donde hilos concurrentes causan resultados impredecibles.
 
+### Parte 3
+    Tabla de valores obtenidos vs esperados con MUTEX:
+     Ejecución  Valor esperado  Valor obtenido 
+     ---------  ------------  -----------
+        1          4000000         4000000        
+        2          4000000         4000000        
+        3          4000000         4000000        
+        4          4000000         4000000        
+        5          4000000         4000000        
+
+    *Comparando con la tabla anteriro, la tabla de la parte 2 los resultados obtenidos son diferentes con respecto a los esperados, en cambio esta tabla de la parte 3 (Con Mutex), esta tienen los valores obtenidos iguales a los esperados.
+
+    1.​ ¿Qué cambió con respecto al programa anterior?
+        Ahora los incrementos de contador están protegidos por un mutex, evitando que varios hilos modifiquen la variable al mismo tiempo.
+
+    2.​ ¿Qué hace std::mutex?
+        Es un mecanismo de exclusión mutua que permite que solo un hilo acceda a la sección crítica (contador) a la vez.
+
+    3.​ ¿Qué hace std::lock_guard?
+        Bloquea automáticamente el mutex al entrar en el bloque y lo libera al salir, evitando olvidos de unlock() y asegurando seguridad.
+
+    4.​ ¿Por qué ahora el resultado sí debería ser correcto?
+        Porque cada incremento se ejecuta de manera atómica: ningún hilo puede interrumpir otro mientras modifica contador, así que no se pierden incrementos.
+
+    5.​ ¿Qué desventaja podría tener proteger cada incremento individual con un mutex?
+        Puede reducir el rendimiento, ya que bloquear y desbloquear el mutex para cada incremento genera sobrecarga, especialmente con millones de operaciones pequeñas.
+
+
+### Parte 4
+
+
+### Parte 5
+
+
+### Parte 6
 
     

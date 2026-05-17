@@ -27,7 +27,10 @@
     Ahora para ejecutar el programa, en la terminal se escribe: ./parte2 5 veces para comparar valores.
 
 ### Parte 3
+    Una vez realizado el codigo base, se procede a compilar.
+    Comando para compilar el programa es: g++ -std=c++17 -Wall -Wextra -pthread src/parte3_mutex.cpp -o parte3
 
+    Ahora para ejecutar el programa, en la terminal se escribe: ./parte3 5 veces para comparar valores.
 
 ### Parte 4
 
