@@ -88,6 +88,34 @@
         La versión paralela podría ser más lenta que la secuencial debido a la sobrecarga de hilos y sincronización.       
 
 ### Parte 5
+    Tabla solicitada: 
+     Cantidad de hilos  Tiempo obtenido (ms) 
+     -----------------  -------------------- 
+     1                  147                  
+     2                  74                   
+     4                  33                   
+     8                  46                  
+     16                 46                   
+
+     Utilice el comando nproc para ver la cantidad de nucleos que tengo y me dice que tengo 4, lo que tiene sentido, ya que si vemos en la tabla el mejor tiempo fue cuando la cantidad de hilos era de 4, porque mi nucleo es de 4.
+
+    1.​ ¿Cuál cantidad de hilos produjo el mejor tiempo?
+        EL de 4
+
+    2.​ ¿El tiempo mejoró siempre al aumentar los hilos?
+        No del todo desde 1 a 4 hilos se ve que hay mejora, pero despues de 4 a 8 y de 8 a 16 el tiempo empeora.
+
+    3.​ ¿Cuántos núcleos tiene la computadora donde se ejecutó el programa?
+        4 nucleos
+
+    4.​ ¿Qué ocurre cuando se usan más hilos que núcleos disponibles?
+        El CPU tiene que hacer context switching, cambiando entre hilos y gastando tiempo en gestión en lugar de computación.
+
+    5.​ ¿Qué relación tiene esto con el context switching?
+        Más hilos que núcleos implica que el CPU interrumpe y reanuda hilos constantemente, aumentando la sobrecarga y disminuyendo eficiencia.
+
+    6.​ ¿Por qué la versión con 16 hilos podría no ser la mejor?
+        Porque hay demasiados hilos para pocos núcleos, lo que genera más overhead que beneficio, sin mejorar la velocidad de suma.
 
 
 ### Parte 6

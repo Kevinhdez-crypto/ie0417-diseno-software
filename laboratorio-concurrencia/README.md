@@ -41,6 +41,11 @@
     Ahora para ejecutar el programa, en la terminal se escribe: ./parte4 3 veces para llenar la tabla solicitada.
 
 ### Parte 5
+    Una vez realizado el codigo base, se procede a compilar.
+    Comando para compilar el programa es: g++ -std=c++17 -O2 -Wall -Wextra -pthread src/parte5_hilos_vs_rendimiento.cpp -o parte5
 
+    Ahora para ejecutar el programa, en la terminal se escribe: ./parte5 en este caso solo se hace 1 vez.
+
+    Luego utilice el comando nproc para ver la cantidad de nucleos que tenia en la computadora, que eran de 4 nucleos.
 
 ### Parte 6
