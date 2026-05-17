@@ -33,7 +33,12 @@
     Ahora para ejecutar el programa, en la terminal se escribe: ./parte3 5 veces para comparar valores.
 
 ### Parte 4
+    Una vez realizado el codigo base, se procede a compilar.
+    Comando para compilar el programa es: g++ -std=c++17 -O2 -Wall -Wextra -pthread src/parte4_benchmark.cpp -o parte4
 
+    Utilizando el -O2, muy importante, para que el compilador aplique optimizaciones razonables.
+
+    Ahora para ejecutar el programa, en la terminal se escribe: ./parte4 3 veces para llenar la tabla solicitada.
 
 ### Parte 5
 

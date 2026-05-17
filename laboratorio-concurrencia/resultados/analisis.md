@@ -65,7 +65,27 @@
 
 
 ### Parte 4
+    Tabla: 
+     Ejecución  Tiempo secuencial (ms)  Tiempo paralelo (ms)  ¿Cuál fue más rápido? 
+    ---------  ----------------------  --------------------  --------------------- 
+        1          144                     28                    Paralelo              
+        2          52                      21                    Paralelo              
+        3          57                      21                    Paralelo     
 
+    1.​ ¿El resultado secuencial y el paralelo son iguales?
+        Sí, ambos dan 100,000,000, porque suman exactamente los mismos elementos del vector.
+
+    2.​ ¿La versión paralela siempre fue más rápida?
+        Sí, en tus ejecuciones el tiempo paralelo fue menor (28 ms y 21 ms) que el secuencial (144 ms, 52 ms, 57 ms), mostrando que dividir el trabajo entre hilos mejora la velocidad para vectores grandes.
+
+    3.​ ¿Por qué dividir el vector en bloques permite paralelizar el trabajo?
+        Porque cada hilo procesa su bloque de manera independiente y luego se combinan los resultados parciales, evitando que los hilos interfieran entre sí.
+
+    4.​ ¿Qué costos adicionales tiene la versión paralela?
+        Pueden tener varios, pero los mas comunes son: Crear y administrar hilos, sincronizar resultados parciales, esperar con join.
+
+    5.​ ¿Qué podría pasar si el vector fuera muy pequeño?  
+        La versión paralela podría ser más lenta que la secuencial debido a la sobrecarga de hilos y sincronización.       
 
 ### Parte 5
 
