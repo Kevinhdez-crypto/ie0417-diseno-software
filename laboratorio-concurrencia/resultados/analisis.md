@@ -141,4 +141,38 @@
         std::scoped_lock permite bloquear varios mutex al mismo tiempo de manera atómica, esto asegura que ningún hilo puede tomar un mutex si no puede tomar todos al mismo tiempo, evitando la espera en bucle.
         Ademas al liberar automáticamente los mutex al salir del bloque, no hay riesgo de dejar recursos bloqueados.
 
+### Reflexion Final
+
+    1.​ ¿Cuál fue la diferencia más clara que observó entre ejecución secuencial y ejecución con
+    hilos?
+        La ejecución con hilos permitio que varias tareas se realizaran al mismo tiempo, reduciendo el tiempo total de procesamiento, mientras que la secuencial ejecuta todo una tarea despues de otra.
+
+    2.​ ¿Qué es una condición de carrera?
+        Ocurre cuando varios hilos acceden a un recurso compartido al mismo tiempo y al menos uno lo modifica, causando resultados inesperados o indeseados.
+
+    3.​ ¿Por qué contador++ puede fallar cuando muchos hilos lo ejecutan al mismo tiempo?
+        Porque contador++ no es una operacion atomica, este involucra leer, incrementar y escribir, lo que puede intercalarse entre hilos y perder incrementos.
+
+    4.​ ¿Qué problema resuelve un mutex?
+        Protege recursos compartidos evitando que varios hilos accedan o los modifiquen al mismo tiempo, previniendo condiciones de carrera.
+
+    5.​ ¿Qué ventaja tiene std::lock_guard sobre llamar manualmente a lock() y
+    unlock()?
+        Garantiza que el mutex se libere automaticamente cuando el objeto sale de alcance, evitando olvidos o errores que causen deadlocks.
+
+    6.​ ¿Por qué más hilos no siempre significan mejor rendimiento?
+        Porque el CPU tiene un número limitado de nucleos, y mas hilos generan context switching y overhead, lo que puede ralentizar el programa.
+
+    7.​ ¿Qué es un deadlock?
+        Es una situacion donde dos o mas hilos se bloquean mutuamente esperando recursos que el otro tiene, y ninguno puede continuar.
+
+    8.​ ¿Qué buenas prácticas aplicaría al programar con hilos?
+        Tomar mutex en un orden consistente, usar std::lock_guard o std::scoped_lock, minimizar la duracion de bloqueos y evitar compartir recursos innecesariamente.
+
+    9.​ ¿En qué tipo de programas reales podría ser útil la programación concurrente?
+        En servidores, interfaces graficas, sistemas interactivos o aplicaciones que manejan multiples tareas simultaneas sin depender del rendimiento de un unico hilo.
+
+    10.​ ¿En qué tipo de programas reales podría ser útil la programación paralela?
+        En calculos intensivos, procesamiento de grandes datos, simulaciones cientificas o tareas que se pueden dividir en partes independientes para aprovechar multiples nucleos de CPU.
+
     

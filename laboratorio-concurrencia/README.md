@@ -60,5 +60,5 @@
         Para esa parte se ejecuta ese codigo con el comando: ./parte6_corregido
 
 ### Conclusiones
-
+    En este laboratorio aprendimos a usar hilos en C++ para ejecutar tareas concurrentes y paralelas, mejorando el rendimiento en ciertos casos. Observamos problemas como condiciones de carrera y deadlocks, y como solucionarlos con mutex y std::scoped_lock. También entendimos que mas hilos no siempre significa mas velocidad y la importancia de seguir buenas practicas al programar con multiples hilos.
 
