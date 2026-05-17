@@ -119,5 +119,26 @@
 
 
 ### Parte 6
+    1.​ ¿El programa termina normalmente?
+        No, este se queda bloqueado y necesito usar Control C para pararlo.
+
+    2.​ ¿Qué recurso tomó primero el hilo A?
+        Hilo A toma el recurso 1.
+
+    3.​ ¿Qué recurso tomó primero el hilo B?
+        El hilo B toma el resurso 2 primero.
+
+    4.​ ¿Por qué ninguno de los dos hilos puede continuar?
+        Porque cada hilo tiene un recurso y espera a que el otro hilo libere el que necesita. Esto genera un deadlock.
+
+    5.​ ¿Qué significa espera circular?
+        Significa que los hilos se están esperando mutuamente en un ciclo: A espera a B y B espera a A, formando un bucle que nunca se rompe.
+
+    6.​ ¿Cómo se podría evitar este problema?
+        Se podria evitar tomando los recursos en el mismo orden en todos los hilos, usando std::lock para bloquear varios mutex a la vez sin riesgo de deadlock, evitando mantener un mutex mientras se espera otro recurso.
+
+    7. Explique por qué std::scoped_lock ayuda a evitar este deadlock.
+        std::scoped_lock permite bloquear varios mutex al mismo tiempo de manera atómica, esto asegura que ningún hilo puede tomar un mutex si no puede tomar todos al mismo tiempo, evitando la espera en bucle.
+        Ademas al liberar automáticamente los mutex al salir del bloque, no hay riesgo de dejar recursos bloqueados.
 
     

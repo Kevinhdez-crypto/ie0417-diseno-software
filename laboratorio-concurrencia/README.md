@@ -49,3 +49,16 @@
     Luego utilice el comando nproc para ver la cantidad de nucleos que tenia en la computadora, que eran de 4 nucleos.
 
 ### Parte 6
+    1. Al crear el codigo base para la parte6_deadlock.
+        se utiliza el comando para compilarlo: g++ -std=c++17 -Wall -Wextra -pthread src/parte6_deadlock.cpp -o parte6
+
+        Para esa misma parte se ejecuta ese programa con el comando desde la terminal: ./parte6
+
+    2. Para la verison corregida parte6_deadlock_corregido.cpp. 
+        Se utiliza el comando para compilarlo de: g++ -std=c++17 -Wall -Wextra -pthread src/parte6_deadlock_corregido.cpp -o parte6_corregido
+
+        Para esa parte se ejecuta ese codigo con el comando: ./parte6_corregido
+
+### Conclusiones
+
+
