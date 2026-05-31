@@ -1,0 +1,229 @@
+{
+  "tests": 41,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CalculatorTest",
+      "tests": 14,
+      "testsuite": [
+        {
+          "name": "AddPositiveNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 5
+        },
+        {
+          "name": "AddNegativeNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 9
+        },
+        {
+          "name": "SubtractNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 13
+        },
+        {
+          "name": "MultiplyNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 17
+        },
+        {
+          "name": "DivideNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 21
+        },
+        {
+          "name": "DivideByZeroThrowsException",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 25
+        },
+        {
+          "name": "DetectEvenNumber",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 29
+        },
+        {
+          "name": "DetectOddNumber",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 33
+        },
+        {
+          "name": "MultipleExpectChecks",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 37
+        },
+        {
+          "name": "AssertBeforeDivision",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 43
+        },
+        {
+          "name": "DivideNegativeNumbers",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 51
+        },
+        {
+          "name": "DividePositiveByNegative",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 55
+        },
+        {
+          "name": "ZeroIsEven",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 59
+        },
+        {
+          "name": "RandomAdditionsWithFixedSeed",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_calculator.cpp",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "name": "StringUtilsTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "ConvertTextToUppercase",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 4
+        },
+        {
+          "name": "ConvertMixedTextToUppercase",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 8
+        },
+        {
+          "name": "DetectSimplePalindrome",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 12
+        },
+        {
+          "name": "DetectPalindromeWithSpaces",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 16
+        },
+        {
+          "name": "DetectNonPalindrome",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 20
+        },
+        {
+          "name": "CountVowels",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 24
+        },
+        {
+          "name": "CountVowelsInTextWithoutVowels",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 28
+        },
+        {
+          "name": "EmptyStringToUppercase",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 32
+        },
+        {
+          "name": "EmptyStringIsPalindrome",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 36
+        },
+        {
+          "name": "SingleLetterIsPalindrome",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_string_utils.cpp",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "name": "GradeUtilsTest",
+      "tests": 17,
+      "testsuite": [
+        {
+          "name": "CalculateAverage",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 5
+        },
+        {
+          "name": "AverageEmptyVectorThrowsException",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 10
+        },
+        {
+          "name": "PassingGrade",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 15
+        },
+        {
+          "name": "FailingGrade",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 19
+        },
+        {
+          "name": "LetterGradeA",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 23
+        },
+        {
+          "name": "LetterGradeB",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 27
+        },
+        {
+          "name": "LetterGradeC",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 31
+        },
+        {
+          "name": "LetterGradeD",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 35
+        },
+        {
+          "name": "LetterGradeF",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 39
+        },
+        {
+          "name": "InvalidGradeThrowsException",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 43
+        },
+        {
+          "name": "MinimumValidGrade",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 48
+        },
+        {
+          "name": "MaximumValidGrade",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 52
+        },
+        {
+          "name": "NegativeGradeThrowsException",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 56
+        },
+        {
+          "name": "GradeBoundaryBetweenFAndD",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 60
+        },
+        {
+          "name": "GradeBoundaryBetweenDAndC",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 65
+        },
+        {
+          "name": "GradeBoundaryBetweenCAndB",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 70
+        },
+        {
+          "name": "GradeBoundaryBetweenBAndA",
+          "file": "\/home\/kevin\/ie0417-diseno-software\/laboratorio-testing\/tests\/test_grade_utils.cpp",
+          "line": 75
+        }
+      ]
+    }
+  ]
+}
