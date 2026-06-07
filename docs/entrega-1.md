@@ -6,19 +6,18 @@
 <p align="center">
   <br>
   <strong>Entrega 1</strong><br>
-  <strong>7 de junio de 2026</strong><br>
+  <strong>9 de junio de 2026</strong><br>
   <br>
+  <strong>Universidad de Costa Rica (UCR)</strong><br>
   <strong>Escuela de Ingeniería Eléctrica</strong><br>
   <strong>Taller de Auditoría Técnica de Software</strong>
 </p>
 
 <p align="center">
   <br>
-  <strong>Estudiante:</strong> Nombre del Estudiante<br>
-  <strong>Carrera / Curso:</strong> Ingeniería Eléctrica / [Nombre del curso]<br>
-  <strong>Profesor:</strong> [Nombre del profesor]<br>
-  <br>
-  <strong>Versión:</strong> 1.0
+  <strong>Estudiante:</strong> Kevin Hernández Umaña C33773<br>
+  <strong>Carrera / Curso:</strong> Ingeniería Eléctrica / Diseño de Software para Ingeniería (IE 0417)<br>
+  <strong>Profesor:</strong> Rafael Esteban Badilla Alvarado<br>
 </p>
 
 ---
