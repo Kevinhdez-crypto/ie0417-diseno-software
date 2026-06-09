@@ -259,6 +259,24 @@ Este documento plantea un levantamiento arquitectónico del sistema EIEInfo, e i
 | Dependencias externas | APIs y servicios de terceros múltiples | Medio | Alta | Media-Alta |
 | Configuración prod/dev diferente | Ajustes distintos en `settings.py` según entorno | Medio | Media | Media |
 
+## 9. Respuestas a preguntas orientadoras
+
+### ¿Qué tan centralizado o fragmentado está el sistema?
+El sistema es bastante centralizado: existe un único proyecto Django que agrupa múltiples apps especializadas. No se trata de una arquitectura de microservicios, sino de un monolito modular.
+
+### ¿Cuáles módulos concentran más responsabilidad?
+Los módulos que más concentración muestran son `profesores`, `estudiantes`, `cursos`, `administrativos` y `firma_digital`, ya que gestionan usuarios, datos académicos y procesos críticos del sistema.
+
+### ¿Qué partes parecen más activas y cuáles más legadas?
+Más activas: las áreas de gestión académica (`profesores`, `estudiantes`, `cursos`), comunicación (`anuncios`, `eventos`) y contenido web (`webpage`, `wiki`). Más legadas: la presencia de comentarios legacy y ajustes de configuración sugiere deuda técnica en el core del proyecto y en migraciones históricas.
+
+### ¿Qué señales hay de crecimiento orgánico y deuda técnica?
+Señales de crecimiento orgánico: múltiples apps Django para distintos dominios (academia, eventos, firma digital, inventario, alumni). Señales de deuda técnica: referencias a Django 1.9, configuración sensible mezclada con código, y dependencias antiguas o variadas.
+
+### ¿Dónde se observan los primeros riesgos de mantenimiento o evolución?
+Los primeros riesgos aparecen en la compatibilidad de versiones, la seguridad de la configuración y el acoplamiento monolítico. También es relevante el mantenimiento de integraciones externas y la gestión de entornos dev/prod.
+
+
 ## 9. Observaciones finales
 
 EIEInfo es un sistema web monolítico modularizado en Django, desplegado con Docker y orientado a la gestión académica y administrativa. Su diseño está centrado en una única aplicación Django con múltiples módulos especializados y varias integraciones externas. Los riesgos más iniciales visibles son la compatibilidad de versiones, la seguridad de la configuración y la complejidad de las dependencias externas.
