@@ -279,4 +279,20 @@ Los primeros riesgos aparecen en la compatibilidad de versiones, la seguridad de
 
 ## 9. Observaciones finales
 
-EIEInfo es un sistema web monolítico modularizado en Django, desplegado con Docker y orientado a la gestión académica y administrativa. Su diseño está centrado en una única aplicación Django con múltiples módulos especializados y varias integraciones externas. Los riesgos más iniciales visibles son la compatibilidad de versiones, la seguridad de la configuración y la complejidad de las dependencias externas.
+EIEInfo es un sistema web monolítico modularizado en Django, desplegado con Docker y orientado a la gestión académica y administrativa. Su diseño está centrado en una única aplicación Django con múltiples módulos especializados y varias integraciones externas.
+
+- El sistema es relativamente centralizado: la mayor parte de la lógica y las responsabilidades están dentro de un solo proyecto Django, lo que facilita el despliegue pero también concentra riesgos.
+- La arquitectura muestra crecimiento orgánico: se han incorporado muchas aplicaciones internas (`profesores`, `estudiantes`, `cursos`, `firma_digital`, `webpage`, `alumni`, etc.) para cubrir dominios específicos.
+- Hay señales de deuda técnica: comentarios antiguos de Django 1.9, dependencias mixtas, y cambios condicionales en `settings.py` para producción y desarrollo.
+- El despliegue en Docker es una fortaleza importante, porque separa DB, aplicación y proxy. Sin embargo, requiere un buen control de volúmenes y configuración para evitar inconsistencias entre entornos.
+- Las integraciones externas son un punto crítico: APIs de Google, Facebook, ReCaptcha y servicios de firma digital amplían funcionalidad, pero también agregan dependencias y posibles puntos de falla.
+
+Los riesgos más visibles en esta etapa son:
+
+1. Compatibilidad de versiones y deuda técnica.
+2. Exposición de credenciales y configuración sensible.
+3. Acoplamiento monolítico con muchas responsabilidades.
+4. Dependencias de servicios externos.
+5. Configuración distinta entre producción y desarrollo.
+
+En resumen, EIEInfo es un sistema sólido para su propósito, pero debe gestionarse con cuidado en su evolución técnica para evitar que la centralización y la deuda acumulada se conviertan en barreras para su mantenimiento.
