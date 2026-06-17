@@ -6,7 +6,7 @@
 <p align="center">
   <br>
   <strong>Entrega 2</strong><br>
-  <strong>16 de junio de 2026</strong><br>
+  <strong>19 de junio de 2026</strong><br>
   <br>
   <strong>Universidad de Costa Rica (UCR)</strong><br>
   <strong>Escuela de Ingeniería Eléctrica</strong><br>
